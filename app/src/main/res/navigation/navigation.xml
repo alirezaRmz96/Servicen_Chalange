@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/userIfnoFragment">
+
+    <fragment
+        android:id="@+id/userIfnoFragment"
+        android:name="com.example.firstjetchalange.view.fragments.UserIfnoFragment"
+        android:label="fragment_user_ifno"
+        tools:layout="@layout/fragment_user_ifno" >
+        <action
+            android:id="@+id/action_userIfnoFragment_to_albumIdFragment"
+            app:destination="@id/albumIdFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/albumIdFragment"
+        android:name="com.example.firstjetchalange.view.fragments.AlbumIdFragment"
+        android:label="fragment_album_id"
+        tools:layout="@layout/fragment_album_id" />
+    <fragment
+        android:id="@+id/photoIdFragment"
+        android:name="com.example.firstjetchalange.view.fragments.PhotoIdFragment"
+        android:label="fragment_photo_id"
+        tools:layout="@layout/fragment_photo_id" />
+</navigation>
