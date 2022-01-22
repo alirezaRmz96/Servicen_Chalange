@@ -20,6 +20,10 @@ ext{
     lifecycleVersion = '2.4.0'
     materialVersion = '1.4.0'
     navigaitionVersion = '2.3.5'
+    daggerVersion = '2.40.5'
+    retrofitVersion = '2.9.0'
+    InterceptorVersion = '4.7.2'
+    GlideVersion = '4.11.0'
 
 }
 

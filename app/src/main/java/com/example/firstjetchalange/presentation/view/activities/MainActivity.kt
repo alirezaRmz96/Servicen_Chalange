@@ -1,4 +1,4 @@
-package com.example.firstjetchalange.view.activities
+package com.example.firstjetchalange.presentation.view.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
