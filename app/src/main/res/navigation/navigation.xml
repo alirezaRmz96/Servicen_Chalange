@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/userIfnoFragment"
-        android:name="com.example.firstjetchalange.presentation.view.fragments.UserIfnoFragment"
+        android:name="com.example.firstjetchalange.presentation.view.fragments.UserInfoFragment"
         android:label="fragment_user_ifno"
         tools:layout="@layout/fragment_user_ifno" >
         <action
