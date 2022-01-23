@@ -1,4 +1,4 @@
-package com.example.firstjetchalange.view.fragments
+package com.example.firstjetchalange.presentation.view.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

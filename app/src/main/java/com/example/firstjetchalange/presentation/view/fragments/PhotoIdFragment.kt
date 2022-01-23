@@ -1,4 +1,4 @@
-package com.example.firstjetchalange.view.fragments
+package com.example.firstjetchalange.presentation.view.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import com.example.firstjetchalange.R
 
 
-class UserIfnoFragment : Fragment() {
+
+
+class PhotoIdFragment : Fragment() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +23,7 @@ class UserIfnoFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_user_ifno, container, false)
+        return inflater.inflate(R.layout.fragment_photo_id, container, false)
     }
 
 
