@@ -3,11 +3,12 @@ package com.example.firstjetchalange.presentation
 import android.app.Application
 import com.example.firstjetchalange.BuildConfig
 import com.example.firstjetchalange.presentation.di.Injector
+import com.example.firstjetchalange.presentation.di.albumId.AlbumIdSubComponent
 import com.example.firstjetchalange.presentation.di.core.AppComponent
 import com.example.firstjetchalange.presentation.di.core.AppModule
 import com.example.firstjetchalange.presentation.di.core.DaggerAppComponent
 import com.example.firstjetchalange.presentation.di.core.NetModule
-import com.example.firstjetchalange.presentation.di.userModule.UserInfoSubComponent
+import com.example.firstjetchalange.presentation.di.userInfoModule.UserInfoSubComponent
 
 class App:Application(), Injector {
 
@@ -23,5 +24,9 @@ class App:Application(), Injector {
 
     override fun createUseInfoSubComponent(): UserInfoSubComponent {
         return appComponent.userInfoSubComponent().create()
+    }
+
+    override fun createAlbumIdSubComponent(): AlbumIdSubComponent {
+        return appComponent.albumIdSubComponent().create()
     }
 }

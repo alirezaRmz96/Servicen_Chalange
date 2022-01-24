@@ -1,4 +1,4 @@
-package com.example.firstjetchalange.presentation.di.userModule
+package com.example.firstjetchalange.presentation.di.userInfoModule
 
 import com.example.firstjetchalange.presentation.view.fragments.UserInfoFragment
 import dagger.Subcomponent

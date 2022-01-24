@@ -1,4 +1,4 @@
-package com.example.firstjetchalange.presentation.di.userModule
+package com.example.firstjetchalange.presentation.di.userInfoModule
 
 import com.example.firstjetchalange.domain.usecase.GetUserInfoUseCase
 import com.example.firstjetchalange.presentation.view.viewModel.UserInfoViewModelFactory

@@ -1,4 +1,4 @@
-package com.example.firstjetchalange.data.repository
+package com.example.firstjetchalange.data.repository.userInfo
 
 import android.util.Log
 import com.example.firstjetchalange.data.models.userInfo.UserInfoList

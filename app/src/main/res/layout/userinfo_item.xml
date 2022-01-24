@@ -29,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="normal"
-                android:text="ID:1"
+                android:text="@string/id_user"
                 android:textSize="@dimen/_20sp"
                 android:layout_gravity="center"
                 android:textColor="?android:attr/colorEdgeEffect"
@@ -39,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/_25sp"
-                android:text="Name:Alireza"
+                android:text="@string/name_user"
                 android:textStyle="italic"
                 android:textColor="?android:attr/colorEdgeEffect"/>
 
@@ -48,7 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/_25sp"
-                android:text="Email:Alireza@alireza.com"
+                android:text="@string/email_user"
                 android:textStyle="italic"
                 android:textColor="?android:attr/colorEdgeEffect"/>
 
@@ -57,7 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/_25sp"
-                android:text="Phone:1-463-123-4447"
+                android:text="@string/phone_user"
                 android:textStyle="italic"
                 android:textColor="?android:attr/colorEdgeEffect"/>
 

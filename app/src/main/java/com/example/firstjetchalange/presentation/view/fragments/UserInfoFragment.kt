@@ -31,6 +31,7 @@ class UserInfoFragment : Fragment() {
         super.onAttach(context)
         (requireActivity().application as Injector).createUseInfoSubComponent()
             .inject(this@UserInfoFragment)
+//
 
     }
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -72,9 +73,11 @@ class UserInfoFragment : Fragment() {
     }
 
 
-    fun gotonext(){
+    fun goToAlbumIdFragment(userId:Int){
         findNavController().navigate(
-            UserInfoFragmentDirections.actionUserIfnoFragmentToAlbumIdFragment()
+            UserInfoFragmentDirections.actionUserIfnoFragmentToAlbumIdFragment(
+                userId
+            )
         )
     }
 

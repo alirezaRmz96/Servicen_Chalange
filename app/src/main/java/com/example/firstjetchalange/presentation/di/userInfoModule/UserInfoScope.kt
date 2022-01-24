@@ -1,4 +1,4 @@
-package com.example.firstjetchalange.presentation.di.userModule
+package com.example.firstjetchalange.presentation.di.userInfoModule
 
 import javax.inject.Scope
 

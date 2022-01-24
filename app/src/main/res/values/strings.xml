@@ -2,4 +2,8 @@
     <string name="app_name">FirstJetChalange</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="id_user">ID: %s</string>
+    <string name="name_user">Name: %s</string>
+    <string name="email_user">Email: %s</string>
+    <string name="phone_user">Phone: %s</string>
 </resources>
