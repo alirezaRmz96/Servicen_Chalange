@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
+import com.example.firstjetchalange.R
 import com.example.firstjetchalange.data.models.userInfo.UserInfoList
 import com.example.firstjetchalange.data.models.userInfo.UserInfoListItem
 import com.example.firstjetchalange.databinding.UserinfoItemBinding
@@ -26,15 +27,15 @@ class UserInfoAdapter(
 
     override fun onBindViewHolder(holder: UserInfoAdapter.ViewHolder, position: Int) {
         val userInfo = userInfoList[position]
-        holder.idUser.text = userInfo.id.toString()
-        holder.nameUser.text = userInfo.name
-        holder.emailUser.text = userInfo.email
-        holder.phoneUser.text = userInfo.phone
+        holder.idUser.text = fragment.context?.getString(R.string.id_user,userInfo.id.toString())
+        holder.nameUser.text = fragment.context?.getString(R.string.name_user,userInfo.name)
+        holder.emailUser.text =fragment.context?.getString(R.string.email_user,userInfo.email)
+        holder.phoneUser.text = fragment.context?.getString(R.string.phone_user,userInfo.phone)
 
 
         holder.linearUser.setOnClickListener{
             if (fragment is UserInfoFragment){
-                fragment.gotonext()
+                fragment.goToAlbumIdFragment(userInfo.id)
             }
         }
 

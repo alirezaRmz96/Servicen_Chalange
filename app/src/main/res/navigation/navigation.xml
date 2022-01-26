@@ -19,7 +19,12 @@
         android:id="@+id/albumIdFragment"
         android:name="com.example.firstjetchalange.presentation.view.fragments.AlbumIdFragment"
         android:label="fragment_album_id"
-        tools:layout="@layout/fragment_album_id" />
+        tools:layout="@layout/fragment_album_id" >
+        <argument
+            android:name="userId"
+            app:argType="integer"
+            android:defaultValue="0"/>
+    </fragment>
     <fragment
         android:id="@+id/photoIdFragment"
         android:name="com.example.firstjetchalange.presentation.view.fragments.PhotoIdFragment"

@@ -1,6 +1,7 @@
 package com.example.firstjetchalange.presentation.di.core
 
-import com.example.firstjetchalange.presentation.di.userModule.UserInfoSubComponent
+import com.example.firstjetchalange.presentation.di.albumId.AlbumIdSubComponent
+import com.example.firstjetchalange.presentation.di.userInfoModule.UserInfoSubComponent
 import dagger.Component
 import javax.inject.Singleton
 
@@ -15,4 +16,5 @@ import javax.inject.Singleton
 
 interface AppComponent {
     fun userInfoSubComponent():UserInfoSubComponent.Factory
+    fun albumIdSubComponent():AlbumIdSubComponent.Factory
 }
