@@ -62,11 +62,11 @@ class AlbumIdFragment : Fragment() {
         mBinding!!.albumIdRecyclerView.adapter = albumIdAdapter
 
         mBinding!!.albumIdProgressBar.visibility = View.VISIBLE
-        albumIdViewModel.getAlbumId().observe(viewLifecycleOwner){
+
+        albumIdViewModel.getAlbumId(userId).observe(viewLifecycleOwner){
             it->
             it.let {
                 if (it != null) {
-                    Log.d("TAG", "onViewCreated: " + it[0][1])
                     mBinding!!.albumIdRecyclerView.visibility = View.VISIBLE
                     mBinding!!.albumIdProgressBar.visibility = View.GONE
                     albumIdAdapter.albumsList(userId,it)

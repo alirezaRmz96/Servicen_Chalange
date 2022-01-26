@@ -1,5 +1,6 @@
 package com.example.firstjetchalange.presentation.view.viewModel
 
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.liveData
@@ -9,10 +10,16 @@ class AlbumIdViewModel(
     private val getAlbumIdUseCase: GetAlbumIdUseCase
 ) : ViewModel(){
 
-    fun getAlbumId () = liveData {
+    fun getAlbumId (userId:Int) = liveData {
         val albumIdList =  getAlbumIdUseCase.execute()
-        emit(albumIdList)
+        val albumIdResult = getAlbumIdUseCase.getAlbumId(userId)
+        emit(albumIdResult)
     }
+
+
+//    fun getAlbumId1() = MutableLiveData{
+//        //val album
+//    }
 }
 class AlbumIdViewModelFactory(
     private val getAlbumIdUseCase: GetAlbumIdUseCase
