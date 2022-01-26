@@ -47,9 +47,7 @@ class UserInfoAdapter(
 
     @SuppressLint("NotifyDataSetChanged")
     fun userInfoList(list: List<UserInfoList>){
-        Log.i("MyTag", "userInfoList: " + list[0].size)
         userInfoList = list[0]
-        Log.i("MyTag", "userInfoList: " + userInfoList)
         notifyDataSetChanged()
     }
 
