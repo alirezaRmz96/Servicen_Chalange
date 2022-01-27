@@ -24,10 +24,34 @@
             android:name="userId"
             app:argType="integer"
             android:defaultValue="0"/>
+        <action
+            android:id="@+id/action_albumIdFragment_to_photoIdFragment"
+            app:destination="@id/photoIdFragment" />
     </fragment>
     <fragment
         android:id="@+id/photoIdFragment"
         android:name="com.example.firstjetchalange.presentation.view.fragments.PhotoIdFragment"
         android:label="fragment_photo_id"
-        tools:layout="@layout/fragment_photo_id" />
+        tools:layout="@layout/fragment_photo_id" >
+        <argument
+            android:name="albumId"
+            app:argType="integer"
+            android:defaultValue="0"
+            />
+        <argument
+            android:name="photoId"
+            app:argType="integer"
+            android:defaultValue="0"
+            />
+        <argument
+            android:name="photoUrl"
+            app:argType="string"
+            android:defaultValue=" "
+            />
+        <argument
+            android:name="title"
+            app:argType="string"
+            android:defaultValue=" "
+            />
+    </fragment>
 </navigation>

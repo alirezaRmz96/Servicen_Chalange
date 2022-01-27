@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.firstjetchalange.data.models.albumId.AlbumIdList
 import com.example.firstjetchalange.data.models.albumId.AlbumIdListItem
 import com.example.firstjetchalange.databinding.AlbumidItemBinding
+import com.example.firstjetchalange.presentation.view.fragments.AlbumIdFragment
 
 class AlbumIdAdapter (
     private val fragment: Fragment
@@ -27,19 +28,32 @@ class AlbumIdAdapter (
 
         val albumsList = albums.get(position)
         holder.titleAlbumId.text = albumsList.title
+
+        holder.linearAlbum.setOnClickListener{
+            if (fragment is AlbumIdFragment){
+                fragment.showPerfectlyUser(
+                    albumsList.albumId,
+                    albumsList.id,
+                    albumsList.url,
+                    albumsList.title,
+                )
+            }
+        }
+
     }
 
     override fun getItemCount(): Int {
         return albums.size
     }
 
-    @SuppressLint("NotifyDataSetChanged")
-    fun albumsList(userId : Int,list : List<AlbumIdListItem>){
-        Log.d("TAG", "albumsList: " + list[0])
+
+    fun albumsListItem(list : List<AlbumIdListItem>){
+        albums = list
         notifyDataSetChanged()
     }
 
     class ViewHolder(view:AlbumidItemBinding):RecyclerView.ViewHolder(view.root){
         val titleAlbumId = view.titleAlbumId
+        val linearAlbum = view.cardView
     }
 }
