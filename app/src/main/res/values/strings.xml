@@ -6,5 +6,6 @@
     <string name="name_user">Name: %s</string>
     <string name="email_user">Email: %s</string>
     <string name="phone_user">Phone: %s</string>
-    <string name="albumid_title">AlbumID: %s</string>
+    <string name="albumid_title">Album ID: %s</string>
+    <string name="photoId">PhotoID: %s</string>
 </resources>

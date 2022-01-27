@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".presentation.view.fragments.PhotoIdFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/albumID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp"
+        android:textSize="@dimen/_25sp"
+        android:text="@string/albumid_title"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/PhotoID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_25sp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:text="@string/photoId"
+        android:layout_gravity="center"/>
+    <ImageView
+        android:id="@+id/photo_Url"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:src="@drawable/account_box"
+        android:layout_height="450dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:fitsSystemWindows="true"
+        />
+    <TextView
+        android:layout_marginLeft="@dimen/_10dp"
+        android:id="@+id/title_Album"
+        android:layout_width="match_parent"
+        android:text="non sunt voluptatem placeat consequuntur rem incidunt"
+        android:textSize="@dimen/_30sp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:layout_height="match_parent"/>
 
-</FrameLayout>
+</LinearLayout>

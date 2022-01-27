@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.firstjetchalange.R
@@ -63,35 +64,32 @@ class AlbumIdFragment : Fragment() {
 
         mBinding!!.albumIdProgressBar.visibility = View.VISIBLE
 
+
         albumIdViewModel.getAlbumId(userId).observe(viewLifecycleOwner){
-            it->
             it.let {
                 if (it != null) {
                     mBinding!!.albumIdRecyclerView.visibility = View.VISIBLE
                     mBinding!!.albumIdProgressBar.visibility = View.GONE
-                    albumIdAdapter.albumsList(userId,it)
+                    albumIdAdapter.albumsListItem(it)
                 }
                 else{
                     mBinding!!.albumIdRecyclerView.visibility = View.GONE
                     mBinding!!.albumIdProgressBar.visibility = View.VISIBLE
                 }
             }
-
-
-
-
-
         }
 
 
+    }
+
+    fun showPerfectlyUser(albumId :Int,photoId:Int,photoUrl:String,title:String){
+        findNavController().navigate(
+            AlbumIdFragmentDirections.actionAlbumIdFragmentToPhotoIdFragment(
+                albumId,photoId,photoUrl,title
+            )
+        )
 
     }
-//    fun initializeRecyclerView(userID : Int,list: List<AlbumIdList>){
-//        mBinding!!.albumIdRecyclerView.layoutManager = LinearLayoutManager(requireActivity())
-//        albumIdAdapter = AlbumIdAdapter(this@AlbumIdFragment)
-//        mBinding!!.albumIdRecyclerView.adapter = albumIdAdapter
-//        albumIdAdapter.albumsList(userID,list)
-//    }
 
 
 
