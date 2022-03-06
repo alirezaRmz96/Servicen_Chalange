@@ -1,7 +1,8 @@
 # Servicen_Chalange
-hi every one
+Hi every one
+I using these components
 
 Dagger
--Mvvm
--Coroutine
--Retrofit
+Mvvm
+Coroutine
+Retrofit
