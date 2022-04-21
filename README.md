@@ -1,8 +1,9 @@
 # Servicen_Chalange
+# Introduction
 Hi every one
-I using these components
-
-Dagger
-Mvvm
-Coroutine
-Retrofit
+# Architecture
+* Mvvm
+### Tools & libraries/Technologies
+* Dagger
+* Coroutine
+* Retrofit
