@@ -7,3 +7,5 @@ Hi every one
 * Dagger
 * Coroutine
 * Retrofit
+* kotlin
+* Navigation Component
